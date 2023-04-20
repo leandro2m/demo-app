@@ -9,7 +9,7 @@ scanners:
 - dast
 - secret
 - sca
-# - container
+- container
 - iac
 
 languages:

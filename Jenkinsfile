@@ -34,11 +34,11 @@ pipeline {
                 }
             }
         }
-        // stage ("FortiCNP Image Scan") {
-        //     steps {
-        //          fortiCWPScanner imageName: "${img}", block: true
-        //     }
-        // }
+        stage ("FortiCNP Image Scan") {
+            steps {
+                 fortiCWPScanner imageName: "${img}", block: true
+            }
+        }
         stage('Deploy stage enviroment') {
             steps {
                 script {
